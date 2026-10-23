@@ -1,0 +1,86 @@
+{
+  "description": "Graded relevance judgments: 2 = highly relevant, 1 = relevant.",
+  "queries": [
+    {
+      "query": "how does bm25 rank documents",
+      "judgments": {
+        "bm25-scoring": 2,
+        "ranking-eval": 1
+      }
+    },
+    {
+      "query": "vector embeddings for retrieval",
+      "judgments": {
+        "dense-retrieval": 2,
+        "hybrid-retrieval": 1
+      }
+    },
+    {
+      "query": "crawl delay politeness",
+      "judgments": {
+        "crawl-politeness": 2
+      }
+    },
+    {
+      "query": "log retention privacy",
+      "judgments": {
+        "privacy-logs": 2
+      }
+    },
+    {
+      "query": "measuring ranking quality offline",
+      "judgments": {
+        "ranking-eval": 2,
+        "online-experiments": 1
+      }
+    },
+    {
+      "query": "tail latency sharding",
+      "judgments": {
+        "sharding": 2,
+        "query-cache": 1
+      }
+    },
+    {
+      "query": "cache invalidation queries",
+      "judgments": {
+        "query-cache": 2,
+        "index-freshness": 1
+      }
+    },
+    {
+      "query": "rate limit fairness",
+      "judgments": {
+        "rate-limiting": 2
+      }
+    },
+    {
+      "query": "stemming tokenization",
+      "judgments": {
+        "tokenization": 2,
+        "stopwords": 1
+      }
+    },
+    {
+      "query": "prefix index autocomplete",
+      "judgments": {
+        "autocomplete": 2,
+        "inverted-index": 1
+      }
+    },
+    {
+      "query": "combining keyword and vector scores",
+      "judgments": {
+        "hybrid-retrieval": 2,
+        "dense-retrieval": 1,
+        "bm25-scoring": 1
+      }
+    },
+    {
+      "query": "detecting cloaking link spam",
+      "judgments": {
+        "spam-detection": 2
+      }
+    }
+  ]
+}

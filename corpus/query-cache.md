@@ -1,0 +1,2 @@
+# Query result caching
+Most search traffic is a small set of repeated queries, so caching results is the cheapest latency win available. The hard part is invalidation. A cache key should include everything that changes the answer: the query text, the mode, the filters, the page, and the index generation. Time based expiry is simpler and worse, because it serves stale results for a whole window after an index update. A generation counter that increments on each index publish lets you invalidate everything atomically while keeping the old entries readable until they age out.

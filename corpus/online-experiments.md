@@ -1,0 +1,2 @@
+# Online experiments
+Offline metrics predict but do not decide. Online experiments measure what people do: clicks, reformulations, and whether they leave. Interleaving is cheaper than a traffic split, because it blends two rankings into one result page and counts which source won each position. A temptation to avoid is optimising click through rate alone, since a result that looks like the answer gets clicked whether or not it is right. The guardrail metrics matter more than the primary one: latency, abandonment, and the rate at which users rewrite their query.

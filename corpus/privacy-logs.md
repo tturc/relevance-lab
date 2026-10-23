@@ -1,0 +1,2 @@
+# Log retention and privacy
+Query logs are the most sensitive artefact a search engine holds: they are a record of what a person was worried about, at a timestamp, from an address. Retention policy is therefore a security decision rather than a storage decision. Practical measures: keep raw logs for a short window, aggregate the rest, truncate or hash the address, and separate the query from the identity that issued it so the two cannot be rejoined. A deletion request has to be honoured in the logs, the index, and the backups, and the backup is the part teams forget.

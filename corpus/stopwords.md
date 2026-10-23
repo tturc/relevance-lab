@@ -1,0 +1,2 @@
+# Stopword removal
+Removing common words like the, and, and of shrinks the index and speeds up matching. It also throws away signal. A phrase query for to be or not to be depends entirely on the words a stopword list deletes, so phrase matching needs the original positions regardless of what was indexed. The modern compromise is to keep stopwords out of the ranking score but keep their positions for phrase checks. For a small collection the saving is negligible, and dropping them is mostly about matching behaviour rather than storage.
